@@ -7,8 +7,9 @@ function getInnerTextById(id) {
     return parseFloat(document.getElementById(id).innerText);
 }
 
-function gteInnerHtml(id) {
-    return document.getElementById(id).innerHTML;
+
+function addClassList(id){
+    return document.getElementById(id).classList;
 }
 
 
@@ -30,6 +31,19 @@ document.getElementById("btn-donate").addEventListener("click", function () {
 
     document.getElementById('my_modal_1').showModal();
 
+
+    const historyCard = document.createElement("div");
+    historyCard.className = "border rounded-[16px] p-4 space-y-4"
+
+    historyCard.innerHTML = `
+                        <h4 class="text-2xl font-bold" >${inputValue} Taka is donated for Flood at Noakhali, Bangladesh </h4>
+                        <p class="text-gray-500 font-light text-base" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
+    
+    
+    `
+    const historyList = document.getElementById("history-container")
+    historyList.appendChild(historyCard)
+    
 });
 
 document.getElementById("btn-donate-2").addEventListener("click", function () {
@@ -73,3 +87,15 @@ document.getElementById("btn-donate-3").addEventListener("click", function () {
     document.getElementById('my_modal_1').showModal();
 
 });
+
+
+// history btn
+
+document.getElementById("history-btn").addEventListener("click", function(){
+    
+    addClassList("history-btn").add("bg-[#B4F461]", "border-none");
+    addClassList("donation-btn").remove("bg-[#B4F461]", "border-none");
+
+    addClassList("donation-container").add("hidden")
+    addClassList("history-container").remove("hidden")
+})
