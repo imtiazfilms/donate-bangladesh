@@ -41,8 +41,8 @@ document.getElementById("btn-donate").addEventListener("click", function () {
     
     
     `
-    const historyList = document.getElementById("history-container")
-    historyList.appendChild(historyCard)
+    const historyList = document.getElementById("history-container");
+    historyList.appendChild(historyCard);
     
 });
 
@@ -65,6 +65,19 @@ document.getElementById("btn-donate-2").addEventListener("click", function () {
 
     document.getElementById('my_modal_1').showModal();
 
+
+    const historyCard = document.createElement("div");
+    historyCard.className = "border rounded-[16px] p-4 space-y-4"
+
+    historyCard.innerHTML = `
+                        <h4 class="text-2xl font-bold" >${inputValue} Taka is donated for Flood Relief in Feni, Bangladesh </h4>
+                        <p class="text-gray-500 font-light text-base" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
+    
+    
+    `
+    const historyList = document.getElementById("history-container");
+    historyList.appendChild(historyCard);
+
 });
 
 document.getElementById("btn-donate-3").addEventListener("click", function () {
@@ -86,6 +99,19 @@ document.getElementById("btn-donate-3").addEventListener("click", function () {
 
     document.getElementById('my_modal_1').showModal();
 
+
+    const historyCard = document.createElement("div");
+    historyCard.className = "border rounded-[16px] p-4 space-y-4"
+
+    historyCard.innerHTML = `
+                        <h4 class="text-2xl font-bold" >${inputValue} Taka is donated in Aid For Injured in the Quota Movement </h4>
+                        <p class="text-gray-500 font-light text-base" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
+    
+    
+    `
+    const historyList = document.getElementById("history-container");
+    historyList.appendChild(historyCard);
+
 });
 
 
@@ -96,6 +122,15 @@ document.getElementById("history-btn").addEventListener("click", function(){
     addClassList("history-btn").add("bg-[#B4F461]", "border-none");
     addClassList("donation-btn").remove("bg-[#B4F461]", "border-none");
 
-    addClassList("donation-container").add("hidden")
-    addClassList("history-container").remove("hidden")
+    addClassList("donation-container").add("hidden");
+    addClassList("history-container").remove("hidden");
+})
+
+document.getElementById("donation-btn").addEventListener("click", function(){
+
+    addClassList("donation-btn").add("bg-[#B4F461]", "border-none");
+    addClassList("history-btn").remove("bg-[#B4F461]", "border-none");
+
+    addClassList("donation-container").remove("hidden");
+    addClassList("history-container").add("hidden");
 })
