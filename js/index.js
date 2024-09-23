@@ -19,7 +19,7 @@ document.getElementById("btn-donate").addEventListener("click", function () {
     const myBalance = getInnerTextById("main-balance");
 
     if (inputValue <= 0 || isNaN(inputValue) || myBalance <= 0) {
-        alert("SORRY! Something went wrong. Please Try Again.")
+        alert("SORRY! Something went wrong. Please Try Again.");
         return;
     }
 
@@ -52,7 +52,7 @@ document.getElementById("btn-donate-2").addEventListener("click", function () {
     const myBalance = getInnerTextById("main-balance");
 
     if (inputValue <= 0 || isNaN(inputValue) || myBalance <= 0) {
-        alert("SORRY! Something was wrong. Please Try Again.")
+        alert("SORRY! Something went wrong. Please Try Again.");
         return;
     }
 
@@ -86,7 +86,7 @@ document.getElementById("btn-donate-3").addEventListener("click", function () {
     const myBalance = getInnerTextById("main-balance");
 
     if (inputValue <= 0 || isNaN(inputValue) || myBalance <= 0) {
-        alert("SORRY! Something was wrong. Please Try Again.")
+        alert("SORRY! Something went wrong. Please Try Again.");
         return;
     }
 
@@ -125,6 +125,8 @@ document.getElementById("history-btn").addEventListener("click", function(){
     addClassList("donation-container").add("hidden");
     addClassList("history-container").remove("hidden");
 })
+
+// donation btn
 
 document.getElementById("donation-btn").addEventListener("click", function(){
 
