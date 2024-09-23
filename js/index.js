@@ -37,7 +37,7 @@ document.getElementById("btn-donate").addEventListener("click", function () {
 
     historyCard.innerHTML = `
                         <h4 class="text-2xl font-bold" >${inputValue} Taka is donated for Flood at Noakhali, Bangladesh </h4>
-                        <p class="text-gray-500 font-light text-base" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
+                        <p class="text-gray-500 font-light text-base bg-slate-50 rounded-lg p-2" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
     
     
     `
@@ -71,7 +71,7 @@ document.getElementById("btn-donate-2").addEventListener("click", function () {
 
     historyCard.innerHTML = `
                         <h4 class="text-2xl font-bold" >${inputValue} Taka is donated for Flood Relief in Feni, Bangladesh </h4>
-                        <p class="text-gray-500 font-light text-base" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
+                        <p class="text-gray-500 font-light text-base bg-slate-50 rounded-lg p-2" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
     
     
     `
@@ -105,7 +105,7 @@ document.getElementById("btn-donate-3").addEventListener("click", function () {
 
     historyCard.innerHTML = `
                         <h4 class="text-2xl font-bold" >${inputValue} Taka is donated in Aid For Injured in the Quota Movement </h4>
-                        <p class="text-gray-500 font-light text-base" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
+                        <p class="text-gray-500 font-light text-base bg-slate-50 rounded-lg p-2" >Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka' })}</p>
     
     
     `
